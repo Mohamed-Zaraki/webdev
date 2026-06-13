@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef8e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.results , .quiz-container {
+    display: none;
+}
+
+.container  , .quiz-container , .results{
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;   
+    position: relative;
+    text-align: center;
+    
+
+}
+h1 , h2 {
+
+   color: #e86a33;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+#description {
+    color: #555;
+    font-size: 1.5rem;
+}
+button{
+    background-color: #e86a33;
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.option-btn{
+
+    background-color: #fef8e2;
+    color: #333;
+    border: 2px solid #e86a33;
+    padding: 18px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    width: 100%;
+    text-align: left;
+
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.option-btn:hover {
+    background-color: azure;
+    
+}
+
+#question {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}   
+
+#info-question  {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+.p_container{
+    margin-top: 20px;
+    background-color: #fef8e2;
+    padding: 15px;
+}
+
+#evaluation{
+    font-weight: bold;
+    color: #e86a33;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+#finalscore{
+    font-size: 1.5rem;
+    margin-top: 10px;
+
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#bar {
+    width: 0%;
+    height: 100%;
+    background-color: #e86a33;
+    transition: width 0.5s ease-in-out;
+}
+
+
+
