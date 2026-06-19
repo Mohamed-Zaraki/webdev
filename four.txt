@@ -1,4 +1,2 @@
 four
 44
-Hello Four
-
