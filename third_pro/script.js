@@ -20,12 +20,22 @@ Array.from(task).forEach(element => {
 
 Array.from(colums).forEach(column => {
 
-    column.addEventListener('dragover', (event) => {
+    column.addEventListener('dragenter', (event) => {
         event.preventDefault()
+        column.classList.add('over')
+    })
+
+    column.addEventListener( 'dragover', (event) => {
+        event.preventDefault()
+    })
+
+    column.addEventListener('dragleave', () => {
+        column.classList.remove('over')
     })
 
     column.addEventListener('drop', (event) => {
         event.preventDefault()
+        column.classList.remove('over')
 
         if (draggedTask) {
             const list = column.querySelector('ul')

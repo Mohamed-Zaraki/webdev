@@ -31,18 +31,29 @@ body{
 
 .columns {
 
-    background-color: gray; 
+    background-color: #e3e4e8; 
     width: 300px;
     height: 400px;
     padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0,0 , 0.1    );
 
 }
 
 ul li {
     list-style: none;
     background-color: aliceblue;
+    border-radius: 8px;
     padding: 10px;
     margin: 10px;
+    cursor: grab;   
+    box-shadow: 0 2px 4px rgba(0, 0,0 , 0.2 );
+    transition: transform 0.2s , box-shadow 0.2s;
+}
+
+li:active {
+    cursor: grabbing;
+     background-color: #dceeff;
+    transform: scale(1.03);
 }
 
 .dragging{
@@ -50,8 +61,18 @@ ul li {
     opacity: 0.5;
 }
 
-ul li:hover {
-    cursor: grab;
-    background-color: #dceeff;
-    transform: scale(1.03);
+.columns.over {
+    background-color: #d1d3d8;  
+}
+
+@media (max-width: 768px){
+  #container-task{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columns{
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
